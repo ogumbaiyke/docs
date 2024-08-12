@@ -25,7 +25,7 @@ Ordinal scales are mostly used for names and categorical data where there is a d
 D3.scaleOrdinal() generally takes the following form:
 
 ```pseudo
-d3.scaleOrdinal([[domain, ]range]);               //Creating an ordinal scale
+d3.scaleOrdinal([[domain, ]range]);          //Creating an ordinal scale
 ```
 
 **domain**
@@ -47,9 +47,9 @@ const positionScale = d3.scaleOrdinal()
                     .range([5.33, 5.45, 6.03]);
 
 // Example usage:
-console.log(positionScale('First'));  // Output: '5.33'
+console.log(positionScale('First'));  // Output: '5.30'
 console.log(positionScale('Second')); // Output: '5.45'
 console.log(positionScale('Third')); // Output: '6.03'
 ```
 
-Three runners are competiting in a race. The first person finishes the race in five minutes and thirty-three seconds while the second person finishes the race in five minutes and forty-five seconds. The third person finishes the race in six minutes and three seconds. From the data visualization tasks, we can deduct the different positions and differences from the value of the range. Without the range, it would be impossible to get more data about the domain.
+Three runners are competiting in a race. The first person finishes the race in five minutes and thirty seconds while the second person finishes the race in five minutes and forty-five seconds. The third person finishes the race in six minutes and three seconds. From the data visualization tasks, we can deduct the different positions and differences from the value of the range. Without the range, it would be impossible to get more data about the domain.
